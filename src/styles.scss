@@ -1,0 +1,288 @@
+/* Import styles */
+
+@import "normalized.scss";
+@import "global.scss";
+@import "vars.scss";
+@import "colors.scss";
+
+
+/* Navigation */
+
+.menu__list {
+  display: flex;
+  gap: 12px;
+}
+
+.menu__burger {
+  display: none;
+}
+
+/* Header */
+
+.header {
+  padding: 38px 0 154px;
+  background-color: $bg-color;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__link {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    transition: width 0.6s ease-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:active {
+    color: #FFE074;
+    
+    &::after {
+      background-color: #FFE074;
+    }
+  }
+}
+
+.offer {
+  text-align: center;
+  margin-top: 88px;
+  color: #fff;
+}
+
+.offer__title {
+  text-transform: uppercase;
+}
+
+.offer__text {
+  font-weight: 700;
+  color: #FFE074;
+  font-size: 12px;
+}
+
+.offer__info {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* Colors */
+
+.colors {
+  padding: 56px 0 63px;
+}
+
+.color-title {
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 59px;
+}
+
+.grey-palette {
+  display: flex;
+  gap: 24px;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+}
+
+.color-box--big {
+  width: 858px;
+  height: 472px;
+  background-color: #72FFE6;
+}
+
+.palette {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 80px 0;
+}
+
+.palette__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 30%;
+}
+
+.pastel-palette {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pastel-palette__wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+/* Works */
+
+.works {
+  padding: 80px 0 101px;
+}
+
+.works-title {
+  margin-bottom: 48px;
+}
+
+.works-gallery {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 87px;
+}
+
+.subscription-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.subscription-buttons__btn {
+  padding: 11px 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  width: max-content;
+  background: rgba(33, 150, 243, 1) ;
+  color: #fff;
+  transition: background 2s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(90.11deg, #0069C0 0.1%, #2196F3 48.45%, #0069C0 99.4%);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25); 
+  }
+
+  &:active {
+    background: #0069C0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  &--ghost {
+    border-color: #5C6BC0;
+    color: #5C6BC0;
+    background-color: transparent;
+    transition: .5s ease;
+
+    &:hover {
+      background: #5C6BC0;
+      color: #fff;
+    }
+
+  }
+
+  &--no-bg {
+    color: #2196F3;
+    background-color: transparent;
+    transition: .5s ease;
+
+    &:hover {
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+      background: transparent;
+    }
+
+    &:active {
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+    }
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 32px;
+  }
+}
+
+/* Freelance */
+
+.freelance {
+  padding-bottom: 101px;
+}
+
+.card {
+  font-family: 'Inter', sans-serif;
+  padding: 40px;
+  border: 2px solid #E3E4EB;
+  border-radius: 16px;
+  max-width: 410px;
+  margin: 0 auto;
+}
+
+.card__title {
+  text-align: center;
+}
+
+.card__subtitle {
+  font-size: 56px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.card__options-item {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555770;
+  list-style-type: disc;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.card__btn {
+  display: block;
+  margin: 32px auto 0;
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: #3366FF;
+
+  &:hover {
+    background-color: #6388F8;
+  }
+
+  &:active {
+    background-color: #184ADF;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: $bg-color;
+  padding: 57px 0;
+}
+
+.footer .menu__list {
+  justify-content: center
+}
+
+
+/* Import responsive */
+
+@import "responsive.scss";

@@ -1,0 +1,137 @@
+/* 1201-1400px */
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 1110px;
+    }
+
+    .palette__wrapper {
+        width: 45%;
+    }
+}
+
+/* 992-1200px */
+
+@media screen and (max-width: 1200px) {
+    .container, .container--small {
+        width: 960px;
+    }
+
+    .palette__wrapper {
+        width: 55%;
+    }
+
+    .works-gallery__item {
+        width: 31%;
+    }
+}
+
+/* 768-991px */
+
+@media screen and (max-width: 991px) {
+    .container, .container--small {
+        width: 720px;
+    }
+
+    .works-gallery__item {
+        width: 30%;
+    }
+
+    .palette__wrapper {
+        width: 130%;
+    }
+}
+
+/* 576px-767px */
+
+@media screen and (max-width: 767px) {
+    .container, .container--small {
+        width: 540px;
+    }
+
+    .nav .menu__list {
+        display: none;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    .menu__burger {
+        display: block;
+        fill: #fff;
+    }
+
+    .logo {
+        font-size: 10px;
+    }
+
+    .color-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .color-box--big {
+        height: 272px;
+        width: 752px;
+    }
+
+    .works-gallery {
+        justify-content: center;
+    }
+
+    .works-gallery__item {
+        width: 45%;
+    }
+}
+
+/* 451px-575px */
+
+@media screen and (max-width: 575px) {
+    .container, .container--small {
+        width: 95%;
+    }
+
+    .palette__wrapper {
+        width: 185%;
+    }
+
+    h1 {
+        font-size: 49px;
+    }
+}
+
+/* 320-450px */
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    .palette {
+        margin: 40px 0;
+    }
+
+    .color-box {
+        width: 30px;
+        height: 30px;
+    }
+
+    .grey-palette, .palette__wrapper, .pastel-palette, .pastel-palette__wrapper {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .palette {
+        flex-wrap: wrap;
+    }
+
+    .color-box--big {
+        width: 300px;
+        height: 150px;
+        margin: 35px auto 0;
+    }
+
+}
+
+
